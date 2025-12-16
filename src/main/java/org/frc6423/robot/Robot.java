@@ -18,9 +18,12 @@ import edu.wpi.first.wpilibj.DriverStation;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.Commands;
 import org.frc6423.lib.driver.CommandRobot;
+import org.frc6423.robot.subsystems.elevator.Elevator;
 
 @Logged
 public class Robot extends CommandRobot {
+  private final Elevator elevator = new Elevator();
+
   public Robot() {
     super(kDefaultPeriod);
 
